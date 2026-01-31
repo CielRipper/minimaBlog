@@ -4,13 +4,13 @@
  title: Jaxon's Blog
 #
  author:
-   name: Jaxon Treadwell
-   email: jaxontreadwell@gmail.com
+  name: Jaxon Treadwell
+  email: jaxontreadwell@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
- description: >
-   Blog for Database and Websystems. This is used in documenting projects, labs, and what I learn along the way.
+ description: >-
+  Blog for Database and Websystems. This is used in documenting projects, labs, and what I learn along the way.
 
 
 # Build settings
