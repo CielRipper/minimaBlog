@@ -4,8 +4,8 @@
 # title: THIS IS DEFINITELY MY TITLE 123
 #
 # author:
-#   name:Jaxon Treadwell
-#   email:jaxontreadwell@gmail.com
+#   name: Jaxon Treadwell
+#   email: jaxontreadwell@gmail.com
 #
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
