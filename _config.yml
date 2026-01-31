@@ -1,16 +1,16 @@
 # Site-wide settings
 # ------------------
 #
-# title: THIS IS DEFINITELY MY TITLE 123
+ title: THIS IS DEFINITELY MY TITLE 123
 #
-# author:
-#   name: Jaxon Treadwell
-#   email: jaxontreadwell@gmail.com
-#
+ author:
+   name: Jaxon Treadwell
+   email: jaxontreadwell@gmail.com
+
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
-# description: >
-#   Blog for Database and Websystems. This is used in documenting projects, labs, and what I learn along the way.
+ description: >
+   Blog for Database and Websystems. This is used in documenting projects, labs, and what I learn along the way.
 
 
 # Build settings
