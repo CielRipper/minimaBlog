@@ -2,6 +2,8 @@
 layout: post
 title: "Introduction Post"
 date: 2026-01-31
+author: 
+ - Jaxon Treadwell
 ---
 
 This is my first post on my Jekyll blog for Database and Web Systems. The main goal of this post is to document how my setup went and what I learned while getting everything running.
