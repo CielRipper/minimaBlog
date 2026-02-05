@@ -54,11 +54,11 @@ Overall, this lab made the site feel more like a real personal project instead o
 
 Here is an example of where my blog insperation came from:
 
-![Great Famine lab 1 pic](/assets/images/GreatFamineImage.png)
+![Great Famine lab 1 pic]({{ '/assets/images/GreatFamineImage.png' | relative_url }})
 
 Here is another example showing my traffic light I made:
 
-![Traffic Light](/assets/images/TrafficLightImage.png)
+![Traffic Light]({{ '/assets/images/TrafficLightImage.png' | relative_url }})
 
 ---
 
