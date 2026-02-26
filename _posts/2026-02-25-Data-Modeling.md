@@ -44,12 +44,47 @@ Here is the ER diagram I created in LucidChart:
 
 ![Lab 6 ER Diagram]({{ '/assets/images/lab6-erd.png' | relative_url }})
 
+### How the ER diagram is structured
 
+The core entities are:
 
+- **Customer**
+- **Orders**
+- **Item**
+- **Manufacturer**
+- **OrderItem** (associative entity / line items)
 
+The key relationships are:
+
+- **Customer (1) -> Orders (many)**  
+  One customer can place many orders.
+
+- **Orders (1) -> OrderItem (many)**  
+  One order can contain many line items.
+
+- **Item (1) -> OrderItem (many)**  
+  An item can appear in many line items across many orders.
+
+- **Manufacturer (1) -> Item (many)**  
+  One manufacturer can produce many items.
+
+The biggest design decision was resolving the many-to-many relationship between Orders and Items. The **OrderItem** entity stores the item-specific order details (quantity, instructions, substitution) that would not make sense as attributes of Orders or Items alone.
+
+---
 
 ## Relational Schema (Redgate)
 
 Here is the relational schema exported from Redgate:
 
 ![Lab 6 Schema]({{ '/assets/images/lab6-schema.png' | relative_url }})
+
+### Primary keys and foreign keys
+
+Each table has a primary key, and foreign key columns represent the relationships:
+
+- `Orders.customer_id` -> `Customer.customer_id`
+- `OrderItems.order_id` -> `Orders.order_id`
+- `OrderItems.item_id` -> `Item.item_id`
+- `Item.manufacturer_id` -> `Manufacturer.manufacturer_id`
+
+These FK columns directly match the relationships shown in the ER diagram.
