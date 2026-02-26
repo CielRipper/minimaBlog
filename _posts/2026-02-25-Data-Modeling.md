@@ -88,3 +88,33 @@ Each table has a primary key, and foreign key columns represent the relationship
 - `Item.manufacturer_id` -> `Manufacturer.manufacturer_id`
 
 These FK columns directly match the relationships shown in the ER diagram.
+
+---
+
+## Are you satisfied with the representation?
+
+Yes. The model is clean, normalized, and scalable. Separating **Orders** from **OrderItem** allows the schema to represent item-level details (quantity, substitutions, instructions) without duplicating data or forcing awkward columns into the wrong entity.
+
+This structure would also support realistic queries like:
+
+- all orders for a customer
+- all items inside an order
+- checking item inventory levels
+- listing all items by manufacturer
+
+---
+
+## Complications I could run into implementing this
+
+Some real-world complications that could show up in implementation include:
+
+- **Inventory race conditions:** multiple users ordering the last units of an item at the same time.
+- **Substitutions:** the system needs business logic to decide what “substitution allowed” means (similar items? same brand? same category?).
+- **Finalization locking:** preventing edits after finalization needs to be enforced both in the UI and in backend logic.
+- **Pickup vs delivery differences:** delivery might eventually require extra attributes (delivery instructions, driver assignment, etc.).
+
+---
+
+## What I learned
+
+This lab helped me understand how to identify entities vs attributes and how to correctly model relationships. The biggest takeaway was learning how many-to-many relationships are handled using an associative entity (OrderItem), and how to decide whether a piece of data belongs to the order as a whole or to a specific item within the order.
