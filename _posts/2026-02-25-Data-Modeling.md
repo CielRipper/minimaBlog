@@ -6,6 +6,24 @@ author:
  - Jaxon Treadwell
 ---
 
+In this lab, I converted a written scenario for an online grocery ordering system into a structured data model. I started by writing user stories, then built an Entity-Relationship Diagram (ERD) to represent the conceptual model, and finally sketched the relational schema (tables, primary keys, and foreign keys) using Redgate.
+
+This was my first time doing full data modeling from a scenario, and building the ERD + schema helped me understand how entities, attributes, and relationships fit together (especially how many-to-many relationships are handled).
+
+---
+
+## Assumptions I made
+
+To translate the scenario into a model, I made these assumptions:
+
+- A customer must register before placing an order.
+- One customer can place many orders, but each order belongs to exactly one customer.
+- An order can contain many items, and each item can appear in many different orders.
+- Because Orders and Items form a many-to-many relationship, I used an associative entity (**OrderItem**) to store item-specific details for each order.
+- Each item has exactly one manufacturer, and each manufacturer can produce many items.
+- Once an order is finalized, it can no longer be modified. I represent this using a `status` field (ex: `open` vs `finalized`).
+
+---
 
 ## User stories
 
