@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction Post"
+title: "Data Modeling"
 date: 2026-02-25
 author: 
  - Jaxon Treadwell
