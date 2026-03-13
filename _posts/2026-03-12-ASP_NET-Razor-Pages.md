@@ -26,6 +26,10 @@ The scaffolding process created several pages automatically:
 
 Once the migrations were run and the database was created, I was able to open the application locally and interact with the Movie database through the browser.
 
+### Movie Database Interface
+
+![Movie Database]({{ '/assets/images/Movies.png' | relative_url }})
+
 ---
 
 ## Creating my own application
@@ -42,6 +46,11 @@ The fields in my model include:
 - **Playlist Order** – the order the song appears in the playlist
 
 Using the same scaffolding command used in the tutorial, Razor automatically generated a full set of pages to manage songs. This allowed me to create, edit, view, and delete songs from the playlist through the web interface.
+
+### Playlist Tracker Interface
+
+![Songs Database]({{ '/assets/images/Songs.png' | relative_url }})
+
 
 ---
 
