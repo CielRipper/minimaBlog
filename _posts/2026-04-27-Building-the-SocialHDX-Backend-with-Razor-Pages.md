@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building the SocialHDX Backend with Razor Pages"
-date: 2026-04-24
+date: 2026-04-27
 author:
  - Jaxon Treadwell
 ---
