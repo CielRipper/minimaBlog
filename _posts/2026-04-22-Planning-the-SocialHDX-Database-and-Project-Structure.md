@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Planning the SocialHDX Database and Project Structure"
-date: 2026-04-08
+date: 2026-04-22
 author:
  - Jaxon Treadwell
 ---
